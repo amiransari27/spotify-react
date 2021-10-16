@@ -1,10 +1,19 @@
+import Body from "../Body/Body"
+import Footer from "../Footer/Footer"
+import Sidebar from "../Sidebar/Sidebar"
 import "./Player.css"
 
-function Player () { 
+function Player({ spotify }) {
 
     return (
         <div className="player">
-            Player
+            <div className="player__body">
+
+                <Sidebar />
+                <Body spotify={spotify}/>
+
+            </div>
+            <Footer />
         </div>
     )
 }
